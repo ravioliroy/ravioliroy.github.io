@@ -7,7 +7,7 @@ body {
 .header{
   padding: 80px;
   text-align: center;
-  background: #1abc9c;
+  background: #ec9ee8;
   color: white;
 }
 /* The sidebar menu */
@@ -52,9 +52,12 @@ body {
 
 
 /* carousel */
-#owl-demo .item img{
-  display: block;
-  width: 100%;
-  height: auto;
-}
+
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
 
