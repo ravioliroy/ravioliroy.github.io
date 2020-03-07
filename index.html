@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+ crossorigin="anonymous">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/w3css/3/w3.css">
@@ -12,33 +13,43 @@
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <style>
-      #grad {
-      height: 500px;
-      background-color: blue; /* For browsers that do not support gradients */
-      background-image: linear-gradient(#1c87c9, #8ebf42);
-      }
-    </style>
+	#grad {
+		height: 500px;
+		background-color: blue;
+		/* For browsers that do not support gradients */
+		background-image: linear-gradient(#1c87c9, #8ebf42);
+	}
+</style>
+
+<style>
+	center {
+  		display: block;
+  		margin-left: auto;
+  		margin-right: auto;
+  		width: 50%;
+}
+</style>
+
 <body>
 	<script src="script.js">
-	</script>
-  
-	<!-- Navigation -->
-	<td></td>
-	<td></td>
-	<td></td>
-	
-		<div id = "mySideNav" class = "sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="aboutus.html">About Us</a>
-      <a href="drivers.html">Drivers</a>
-      <a href="resources.html">Resources</a>
-      <div/>
 
+	</script>
+
+	<!-- Navigation -->
+	<div id="mySideNav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#">About Us</a>
+		<a href="#">Drivers</a>
+		<a href="#">Resources</a>
+	</div>
+	<span onclick="openNav()">open</span>
+      <div id="main">
+        
 	<!-- Slide Show -->
 <section>
-  <img class="mySlides" src="test1.jpg" alt = "thing1" width="200" height="40">
-  <img class="mySlides" src="test2.jpg" alt = "thing2" style="width:100%">
-  <img class="mySlides" src="test3.jpg" alt = "thing3" style="width:100%">
+  <img  src="test1.jpg" alt = "thing1" class="mySlides">
+  <img 	src="test2.jpg" alt = "thing2" class="mySlides">
+  <img  src="test3.jpg" alt = "thing3" class="mySlides">
 </section>
 
 <script>
@@ -58,6 +69,7 @@ function carousel() {
   setTimeout(carousel, 3000);
 }
 </script>
+</div>
     
   </body>
 </html>
