@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>repl.it</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet"> 
 </head>
 <style>
 	body {background-color:#e6ebef;}
   h2 {background-color:#8ebf42;}
   p {background-color:#1c87c9;}
-  .header {
-  max-width: 500px;
-  margin: left;
-}
 </style>
 
 <body>
@@ -36,29 +34,15 @@
       <div id="main">
         
 	<!-- Slide Show -->
-<section>
-  <img class="mySlides" src="test1.jpg" alt = "thing1" style="width:100%">
-  <img class="mySlides" src="test2.jpg" alt = "thing2" style="width:100%">
-  <img class="mySlides" src="test3.jpg" alt = "thing3" style="width:100%">
-</section>
 
-<script>
-// Automatic Slideshow - change image every 3 seconds
-var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
-</script>
+    <div id="owl-demo" class="owl-carousel owl-theme">
+     
+      <div class="item"><img src="test1.jpg"></div>
+      <div class="item"><img src="test2.jpg"></div>
+      <div class="item"><img src="test3.jpg"></div>
+
+
 </div>
     
   </body>
