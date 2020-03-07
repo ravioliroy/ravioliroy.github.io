@@ -1,16 +1,14 @@
+/* font */
 body {
     font-family: 'Caladea', serif;
 }
 /*header css*/
 
-.header {
-  
-  background: #F1B0F1;
+.header{
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
   color: white;
-  font-size: 30px;
-  margin-left: 150px; /* Same as the width of the sidenav */ 
-  padding: 0px 150px;
-   
 }
 /* The sidebar menu */
 .sidenav {
@@ -51,3 +49,12 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
+/* carousel */
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
