@@ -19,6 +19,7 @@ body {
 .image {
   margin-left: 200px;
   margin-top: -3px;
+  padding-top: 30px;
 }
 
 /* The sidebar menu */
@@ -67,5 +68,20 @@ table, th, td {
   border: 1px solid black;
 }
 
+.about {
+  margin-top: 70px;
+  margin-left: 170px;
+}
+
+p {
+    font-size: 1.5em;
+    background-color: #ccc;
+    margin: 70px;
+    padding: 10px;
+}
+.button {
+  color: black;
+  border: 0px solid #4CAF50;
+}
 
 
