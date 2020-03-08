@@ -6,50 +6,112 @@
   <meta name="viewport" content="width=device-width">
   <title>repl.it</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <style>
-  body {background-color:#e6ebef;}
-  h2 {background-color:#8ebf42;}
+  body {
+    background-color: #366DCC;
+  }
+  h2 {
+    background-color: #22447F;
+  }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #90AFFF;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 
 <body>
   <script src="script.js">
 
   </script>
-  <div class = "header">
-    <h1>Available Drivers</h1>
-    </div>
 
   <!-- Navigation -->
-  <div id="mySideNav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="ravioliroy.github.io">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="drivers.html">Drivers</a>
-    <a href="resources.html">Resources</a>
-  </div>
-  <span onclick="openNav()">open</span>
-  <span onclick="closeNav()">open</span>
-      <div id="main">
-        <table style="width:100%">
+  <h3>Healthy Memphis</h3>
+
+  <!-- Navigation -->
+  <ul>
+  <li><a href="https://megazordstds--abigailjacobs1.repl.co/">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">三</a>
+    <div class="dropdown-content">
+      <a href="about.html">About Us</a>
+      <a href="drivers.html">Drivers</a>
+      <a href="resources.html">Resources</a>
+    </div>
+  </li>
+</ul>
+  <div id="main">
+        <table style="width:75%">
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
+    <th>Name</th>
     <th>Age</th>
+    <th>Availability</th>
+    <th>Zipcode</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
+    <td>Jill Smith</td>
     <td>50</td>
+    <td>4:00PM - 8:00PM</td>
+    <td>38106</td>
   </tr>
   <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
+    <td>Eve Jackson</td>
     <td>94</td>
+    <td>11:00AM - 5:00PM</td>
+    <td>38105</td>
   </tr>
 </table>
 
-</div>  
+</div> 
+<footer id = "main-footer"><a href ="driversignup.html">Click here to become a driver</a></footer>
+<footer id = "main-footer"><a href ="driverrequest.html">Click here to request a driver</a></footer>
 </body>
 </html>
