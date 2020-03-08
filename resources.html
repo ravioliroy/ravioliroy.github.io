@@ -2,58 +2,130 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>repl.it</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>repl.it</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <style>
-	body {background-color:#e6ebef;}
-  h2 {background-color:#8ebf42;}
+  body {
+    background-color: #366DCC;
+  }
+  h2 {
+    background-color: #22447F;
+  }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #90AFFF;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 </style>
 
 <body>
-	<script src="script.js">
-    
+  <script src="script.js">
 
-	</script>
+  </script>
+
+  <!-- Navigation -->
+  <h3>Healthy Memphis</h3>
+
+  <!-- Navigation -->
+  <ul>
+  <li><a href="https://megazordstds--abigailjacobs1.repl.co/">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">三</a>
+    <div class="dropdown-content">
+      <a href="about.html">About Us</a>
+      <a href="drivers.html">Drivers</a>
+      <a href="resources.html">Resources</a>
+    </div>
+  </li>
+</ul>
+
+  <div id="main">
   <div class = "header">
     <h1> Resources </h1>
-    <p> A list of resources people can use to study about sexual health on their own time.
+    <p2> A list of resources people can use to study about sexual health on their own time. </p2>
     <br>
     <br>
     
     <a href="http://www.ashasexualhealth.org/">
     The American Sexual Health Organization </a>
-    <p> This website, created by the American Sexual Health Organization (ASHA for short), gives advice on how to maintain a healthy sexual life. The info on this website covers not only how to properly prevent STDs, but sex positivity and how you can make your sex life more healthy in general. </p>
+    <p2> This website, created by the American Sexual Health Organization (ASHA for short), gives advice on how to maintain a healthy sexual life. The info on this website covers not only how to properly prevent STDs, but sex positivity and how you can make your sex life more healthy in general. </p2>
     <br>
     <br>
 
+    <a href="https://www.bedsider.org/">
+    Bedsider </a>
+    <p2> A website that helps young women learn more about birth control. It talks about what birth control is in detail and helps them figure out a birth control method that they're most comfortable with. There is also additional info regarding general sexual health topics as well. </p2>
+    <br>
+    <br>
+    
     <a href="https://goaskalice.columbia.edu/">
     Go Ask Alice! </a>
-    <p> Go Ask Alice! is a website run by a team situated in Columbia Universty. This website allows you to send in questions to the team regarding health topics in general, including anything you might want to know about sexual health. </p>
+    <p2> Go Ask Alice! is a website run by a team situated in Columbia Universty. This website allows you to send in questions to the team regarding health topics in general, including anything you might want to know about sexual health. </p2>
     <br>
     <br>
 
     <a href="https://www.plannedparenthood.org/learn/teens"> Planned Parenthood: Sexual Info for Teens </a>
-    <p> This website, which was created by the Planned Parenthood organization, is a great one stop resource for teenagers to learn many things about sexual health, ranging from various questions about sex to questions about puberty and several topics inbetween. This website is not only good for teens wanting to study on their own, but can also be a great starting point for parents to use if they want to sit down and talk to their children about sex for the first time. </p>
+    <p2> This website, which was created by the Planned Parenthood organization, is a great one stop resource for teenagers to learn many things about sexual health, ranging from various questions about sex to questions about puberty and several topics inbetween. This website is not only good for teens wanting to study on their own, but can also be a great starting point for parents to use if they want to sit down and talk to their children about sex for the first time. </p2>
+    <br>
+    <br>
 
-    </p>
+    <a href="https://safeteens.org/"> 
+    Safe Teens </a>
+    <p2> A website focused on answering questions teens may have about various aspects of life, including any info they might have regarding STDs, birth control, and several other topics related to sexual health. It also includes a section for parents in case they might need info on how to begin talking to their child about sex and puberty.
+    </p2>
     </div>
 
-	<!-- Navigation -->
-	<div id="mySideNav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="https://megazordstds.abigailjacobs1.repl.co/">Home</a>
-		<a href="about.html">About Us</a>
-		<a href="drivers.html">Drivers</a>
-		<a href="resources.html">Resources</a>
-	</div>
-	<span onclick="openNav()">open</span>
-  <span onclick="closeNav()">open</span>
-  <div id="main">
-        
-  </div>  
+  
+   
 </body>
 </html>
