@@ -1,4 +1,5 @@
 /* font */
+<meta name="viewport" content="width=device-width, initial-scale=1">
 body {
     font-family: 'Caladea', serif;
 }
@@ -17,9 +18,10 @@ body {
 }
 
 .image {
-  margin-right: 30px;
+  margin-left: 30px;
   margin-top: -3px;
   padding-top: 30px;
+  
 }
 
 /* The sidebar menu */
@@ -79,9 +81,15 @@ p {
     margin: 70px;
     padding: 10px;
 }
-.button {
-  color: black;
-  border: 0px solid #4CAF50;
+.sidebarStyle {
+  height: 300px;
 }
+
+a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+
 
 
